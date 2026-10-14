@@ -1,0 +1,289 @@
+/* =========================
+   GLOBAL SECTION LAYOUT
+========================= */
+
+section {
+    scroll-margin-top: 100px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    padding: 20px 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(11, 11, 20, 0.65);
+
+    backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 32px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.7);
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+}
+
+
+/* =========================
+   SMOOTH SCROLL
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 80px);
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 90px 8% 110px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 850px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.hero-label {
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 24px;
+
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary),
+        var(--accent)
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h1 {
+    font-size: 68px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #93c5fd,
+        #c4b5fd
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin-bottom: 40px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: var(--text-muted);
+}
+
+
+/* =========================
+   HERO GLOW
+========================= */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: var(--primary);
+
+    opacity: 0.12;
+
+    filter: blur(140px);
+
+    top: 10%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 90px;
+
+    padding: 120px 8%;
+
+    align-items: start;
+}
+
+.about-content {
+    max-width: 620px;
+}
+
+.about-content h2 {
+    max-width: 600px;
+}
+
+.about-content p {
+    max-width: 600px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    padding: 120px 8%;
+}
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+
+    padding: 120px 8%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 8%;
+
+    border-top: 1px solid var(--border);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+}

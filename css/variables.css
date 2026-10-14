@@ -1,0 +1,136 @@
+:root {
+
+    /* =========================
+       BRAND COLORS
+    ========================= */
+
+    --primary: #3b82f6;
+    --secondary: #8b5cf6;
+    --accent: #22c55e;
+    --cyan: #06b6d4;
+    --turquoise: #14b8a6;
+
+
+    /* =========================
+       BACKGROUNDS
+    ========================= */
+
+    --background: #0b0b14;
+
+    --surface: #10131f;
+
+    --surface-light: #161b2a;
+
+    --surface-hover: #1b2233;
+
+
+    /* =========================
+       TEXT
+    ========================= */
+
+    --text: #f8fafc;
+
+    --text-muted: #94a3b8;
+
+    --text-soft: #cbd5e1;
+
+
+    /* =========================
+       BORDERS
+    ========================= */
+
+    --border: rgba(255, 255, 255, 0.08);
+
+    --border-light: rgba(255, 255, 255, 0.12);
+
+
+    /* =========================
+       GRADIENTS
+    ========================= */
+
+    --gradient-primary:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--secondary)
+        );
+
+    --gradient-accent:
+        linear-gradient(
+            135deg,
+            var(--secondary),
+            var(--cyan)
+        );
+
+    --gradient-text:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #93c5fd,
+            #c4b5fd
+        );
+
+
+    /* =========================
+       SHADOWS
+    ========================= */
+
+    --shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35);
+
+    --shadow-lg:
+        0 30px 80px rgba(0, 0, 0, 0.45);
+
+    --shadow-glow:
+        0 0 40px rgba(59, 130, 246, 0.15);
+
+
+    /* =========================
+       BORDER RADIUS
+    ========================= */
+
+    --radius-sm: 8px;
+
+    --radius-md: 14px;
+
+    --radius-lg: 22px;
+
+    --radius-xl: 30px;
+
+
+    /* =========================
+       SPACING
+    ========================= */
+
+    --space-xs: 6px;
+
+    --space-sm: 12px;
+
+    --space-md: 20px;
+
+    --space-lg: 32px;
+
+    --space-xl: 48px;
+
+    --space-2xl: 80px;
+
+
+    /* =========================
+       TRANSITIONS
+    ========================= */
+
+    --transition-fast: 0.2s ease;
+
+    --transition: 0.3s ease;
+
+    --transition-slow: 0.5s ease;
+
+
+    /* =========================
+       Z-INDEX
+    ========================= */
+
+    --z-header: 1000;
+
+    --z-overlay: 2000;
+}

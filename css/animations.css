@@ -1,0 +1,180 @@
+/* =========================
+   ANIMATIONS
+========================= */
+
+
+/* =========================
+   FLOATING CARD
+========================= */
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   AI CENTER PULSE
+========================= */
+
+@keyframes aiPulse {
+    0% {
+        transform: scale(1);
+        box-shadow:
+            0 0 40px rgba(6, 182, 212, 0.35),
+            0 0 80px rgba(6, 182, 212, 0.18);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow:
+            0 0 55px rgba(6, 182, 212, 0.45),
+            0 0 100px rgba(6, 182, 212, 0.22);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow:
+            0 0 40px rgba(6, 182, 212, 0.35),
+            0 0 80px rgba(6, 182, 212, 0.18);
+    }
+}
+
+
+/* =========================
+   AI RING
+========================= */
+
+@keyframes pulseRing {
+    0% {
+        transform: scale(0.92);
+        opacity: 0.35;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: scale(0.92);
+        opacity: 0.35;
+    }
+}
+
+
+/* =========================
+   GLOW
+========================= */
+
+@keyframes glowPulse {
+    0% {
+        box-shadow:
+            0 0 0 rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 30px rgba(255, 255, 255, 0.08);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+
+/* =========================
+   FADE UP
+========================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   FADE IN
+========================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* =========================
+   SLIDE LEFT
+========================= */
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   SLIDE RIGHT
+========================= */
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+    }
+}

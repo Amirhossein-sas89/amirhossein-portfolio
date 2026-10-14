@@ -1,0 +1,55 @@
+/* =========================
+   GLOBAL PAGE STYLES
+========================= */
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-header {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+
+/* =========================
+   NAVIGATION ACTIVE / HOVER
+========================= */
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--cyan)
+    );
+
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:focus-visible::after {
+    width: 100%;
+}
